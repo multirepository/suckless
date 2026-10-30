@@ -1,0 +1,10 @@
+#!/bin/sh
+choice=$(printf "shutdown\nreboot\nsleep" | dmenu -b -i -p "power:")
+case "$choice" in
+    shutdown)
+        systemctl poweroff ;;
+    reboot)
+        systemctl reboot ;;
+    sleep)
+        systemctl suspend ;;
+esac

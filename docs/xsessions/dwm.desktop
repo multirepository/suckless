@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=dwm
+Comment=dynamic window manager
+Exec=/usr/share/xsessions/startdwm.sh
